@@ -4,16 +4,16 @@
 <html>
 <body>
 
-	<table width="100%" bgcolor="#EEEEEE">
+	<table width="100%" bgcolor="#DAFF33">
 
 		<tr align="right"
-			style="font-family: Tahoma; font-size: 8; font-style: italic;">
+			style="font-family: Arial; font-size: 12pt; font-style: oblique;">
 			<td width="25%">about</td>
 			<td width="25%">services</td>
 			<td width="25%">area</td>
 			<td width="25%">customer services</td>
 		</tr>
-		<tr align="right">
+		<tr align="right" style="font-family: Arial; font-size: 9pt; font-style: oblique;">
 			<td>
 				<table>
 					<tr>
@@ -91,10 +91,10 @@
 				</table>
 			</td>
 		</tr>
-		<tr height="125pt">
+		<tr height="99pt">
 			<td colspan="4" align="center" valign="bottom"
-				style="font-family: Arial; font-size: 9pt; font-style: oblique;">Copyright
-				information<br /> site best viewd in browsers
+				style="font-family: Arial; font-size: 8pt; font-style: oblique;">Copyright
+				information<br /> site best viewed in browsers
 			</td>
 		</tr>
 	</table>
