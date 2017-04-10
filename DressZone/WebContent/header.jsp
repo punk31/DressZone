@@ -8,7 +8,7 @@
 		<tr >
 			<td width="30%">logo</td>
 			<td width="50%"><h2>Dress Zone</h2></td>
-			<td width="2%" align="right"><a href="">Login/Logout</a></td>
+			<td width="2%" align="right"><a href="">Login/Logout/Profile/Cart/History</a></td>
 		</tr>
 		<tr>
 			<td colspan="3">links here : HOME -> schools -> dress materials

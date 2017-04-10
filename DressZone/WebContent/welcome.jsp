@@ -11,8 +11,22 @@
 		<tr>
 			<td><jsp:include page="header.jsp"></jsp:include></td>
 		</tr>
+		<tr height="15px">
+			<td>
+				<form action="./login.action" method="post">
+					<table align="right" style="margin-top: 5px; margin-right: 5px;"
+						width="25%">
+						<tr>
+							<td><input type="text" name="login" width="40px" /></td>
+							<td><input type="password" name="secret" width="40px" /></td>
+							<td><input type="submit" value="Login" /></td>
+						</tr>
+					</table>
+				</form>
+			</td>
+		</tr>
 		<tr>
-			<td height="450"> 
+			<td height="450">
 
 				<h2>all contents of the page .!!</h2>
 			</td>

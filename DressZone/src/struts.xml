@@ -9,6 +9,11 @@
 		<action name="firstCall" class="in.dresszone.web.actions.FirstAction">
 		<result name="HOME">/home.jsp</result>
 		</action>
+		
+		<action name="login" class="in.dresszone.web.actions.LoginAction">
+		<result name="LOGINCHKPASS">/home.jsp</result>
+		</action>
+		
 	</package>
-
+	
 </struts>

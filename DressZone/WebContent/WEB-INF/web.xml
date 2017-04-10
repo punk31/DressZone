@@ -17,6 +17,6 @@
 	
 	
 	<welcome-file-list>
-		<welcome-file>header.jsp</welcome-file>
+		<welcome-file>welcome.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>
