@@ -17,9 +17,10 @@
 					<table align="right" style="margin-top: 5px; margin-right: 5px;"
 						width="25%">
 						<tr>
-							<td><input type="text" name="login" width="40px" /></td>
-							<td><input type="password" name="secret" width="40px" /></td>
-							<td><input type="submit" value="Login" /></td>
+							<td valign="top"><input type="text" name="login" size="12" /></td>
+							<td valign="top"><input type="password" name="secret" size="12" /></td>
+							<td > <input type="submit" value="Login" /><br /> <a 
+								href="./registration.jsp" style="font-size: 75%" >New User</a></td>
 						</tr>
 					</table>
 				</form>

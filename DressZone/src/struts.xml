@@ -14,6 +14,10 @@
 		<result name="LOGINCHKPASS">/home.jsp</result>
 		</action>
 		
+		<action name="registration" class="in.dresszone.web.actions.RegistrationAction">
+		<result name="REGISTRATIONPASS">/registration.jsp</result>
+		<result name="REGISTRATIONVERIFY">/registration.jsp</result>
+		</action>
 	</package>
 	
 </struts>
