@@ -4,20 +4,36 @@
 "http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.multipart.maxSize" value="10485760" />
+	<constant name="struts.multipart.saveDir" value="./" />
+
 
 	<package name="default" extends="struts-default" namespace="/">
 		<action name="firstCall" class="in.dresszone.web.actions.FirstAction">
-		<result name="HOME">/home.jsp</result>
+			<result name="HOME">/home.jsp</result>
 		</action>
-		
+
 		<action name="login" class="in.dresszone.web.actions.LoginAction">
-		<result name="LOGINCHKPASS">/home.jsp</result>
+			<result name="LOGINCHKPASS">/home.jsp</result>
 		</action>
-		
+
 		<action name="registration" class="in.dresszone.web.actions.RegistrationAction">
-		<result name="REGISTRATIONPASS">/registration.jsp</result>
-		<result name="REGISTRATIONVERIFY">/registration.jsp</result>
+			<result name="REGISTRATIONPASS">/registration.jsp</result>
+			<result name="REGISTRATIONVERIFY">/registration.jsp</result>
 		</action>
+
+
+		<action name="upload" class="in.dresszone.web.actions.FileUploadAction">
+			<interceptor-ref name="defaultStack">
+				<param name="fileUpload.maximumSize">1048576</param>
+				<param name="fileUpload.allowedTypes">image/jpeg,image/jpg,image/png</param>
+			</interceptor-ref>
+			<result name="success">/result.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+
 	</package>
-	
+
 </struts>
