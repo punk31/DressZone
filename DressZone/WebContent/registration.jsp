@@ -92,7 +92,7 @@
 				<h4>More text / msgs can be placed here...!!</h4>
 			</div>
 			<div id="registrationCompleted">
-			<p style="text-align: center; font-size: 20px; "> Registration has been completed successfully. Please <a href="/DZ" style="color: red;"> click to Continue..!!!</a></p>
+			<p style="text-align: center; font-size: 20px;"> Registration has been completed successfully. Please <a href="/DZ" style="color: red;"> click to Continue..!!!</a></p>
 			</div>
 			</td>
 		</tr>
