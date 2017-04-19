@@ -9,7 +9,8 @@
 <body>
    <form action="upload" method="post" enctype="multipart/form-data">
       <label for="myFile">Upload your file</label>
-      <input type="file" name="myFile" />
+      <input type="text" name="labels" label="file tags : " />
+      <input type="file" name="myFile" multiple="multiple"/>
       <input type="submit" value="Upload"/>
    </form>
 </body>

@@ -31,21 +31,17 @@
 <title>New School</title>
 </head>
 <body >
-	<dz:form name="school" action="addSchool" enctype="multipart/form-data">
+	<dz:form namespace="/admin" action="addSchool" method="post" enctype="multipart/form-data">
 		<dz:textfield label="School Name " key="schoolName" size="50" />
 		<dz:textfield label="Pin code " key="pinCode" size="50" />
 		<dz:textfield label="Location/Area " key="location" size="50" />
 		<dz:textarea label="About school " key="aboutSchool" cols="80"
 			rows="8" />
 
-		<dz:file label="Images " id="imageFiles" value="Select iamges"
-			multiple="multiple" key="imageNames"
-			onchange="javascript:addImageToList();" accept="image/*" />
+		<dz:file label="Images " id="imageFiles" value="Select iamges" multiple="multiple" key="imageFiles" onchange="javascript:addImageToList();" accept="image/*" />
 
-		<dz:submit onclick="javascript:uploadImages()" id="uploadButton"
-			value="Upload" />
-		<dz:reset value="Clear"
-			onclick="document.getElementById('uploadButton').disabled = true;" />
+		<dz:submit onclick="javascript:uploadImages()" id="uploadButton" value="Upload" />
+		<dz:reset value="Clear" onclick="document.getElementById('uploadButton').disabled = true;" />
 	</dz:form>
 
 </body>
