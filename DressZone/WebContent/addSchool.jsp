@@ -30,8 +30,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>New School</title>
 </head>
-<body onload="document.getElementById('uploadButton').disabled = true;">
-	<dz:form method="post" action="#">
+<body >
+	<dz:form name="school" action="addSchool" enctype="multipart/form-data">
 		<dz:textfield label="School Name " key="schoolName" size="50" />
 		<dz:textfield label="Pin code " key="pinCode" size="50" />
 		<dz:textfield label="Location/Area " key="location" size="50" />

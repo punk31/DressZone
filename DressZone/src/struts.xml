@@ -33,14 +33,15 @@
 			<result name="success">/result.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
+		
+		<action name="addSchool" class="in.dresszone.web.actions.SchoolAction"
+			method="addSchool">
+			<result name="added">/home.jsp</result></action>
 
 	</package>
 
-	<package name="default" extends="struts-default" namespace="/school">
-		<action name="addSchool" class="in.dresszone.web.actions.SchoolAction"
-			method="addSchool">
-			<result name="added">/home.jsp</result>
-		</action>
+	<package name="default" extends="struts-default" namespace="/l">
+		
 
 	</package>
 
