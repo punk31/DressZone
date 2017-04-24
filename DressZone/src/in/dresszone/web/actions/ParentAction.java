@@ -8,6 +8,10 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public abstract class ParentAction extends ActionSupport implements ServletContextAware {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7838995996083234934L;
 	int i;
 	ServletContext servletContext;
 	

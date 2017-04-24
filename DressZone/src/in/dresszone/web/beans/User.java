@@ -7,7 +7,6 @@ public class User {
 	private String customerID;
 	private String firstName;
 	private String lastname;
-	private String nickname;
 	private String email;
 	private String mobile;
 	private Date dateofbirth;
@@ -34,14 +33,6 @@ public class User {
 
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
-	}
-
-	public String getNickname() {
-		return nickname;
-	}
-
-	public void setNickname(String nickname) {
-		this.nickname = nickname;
 	}
 
 	public String getEmail() {
