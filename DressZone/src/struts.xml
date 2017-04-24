@@ -6,23 +6,37 @@
 <struts>
 	<constant name="struts.devMode" value="true" />
 	<constant name="struts.custom.i18n.resources" value="global" />
-	<constant name="struts.multipart.maxSize" value="10485760" />
+	<constant name="struts.multipart.maxSize" value="50485760" />
 	<constant name="struts.multipart.saveDir" value="./" />
 	<!-- <constant name="struts.ui.theme" value="simple" /> -->
 
 	<package name="admin" extends="struts-default" namespace="/admin">
+		
+		<global-results>
+		<result name="globalErr">/error.jsp</result>
+		</global-results>
+		
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="globalErr" />
+		</global-exception-mappings>
+
+
 		<action name="addSchool" class="in.dresszone.web.actions.SchoolAction"
 			method="addSchool">
-			<!-- <interceptor-ref name="fileUpload">
-				<param name="maximumSize">1048576</param>
-				<param name="allowedTypes">text/plain,image/png,image/gif,image/jpeg,image/jpg</param>
-			</interceptor-ref> -->
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="fileUpload">
+				<param name="maximumSize">10485760</param>
+			</interceptor-ref>
 			<result name="added">/home.jsp</result>
+			<result name="input">/error.jsp</result>
+			<result name="exception">/error.jsp</result>
 		</action>
 
 	</package>
 
 	<package name="default" extends="struts-default" namespace="/">
+
 		<action name="firstCall" class="in.dresszone.web.actions.FirstAction">
 			<result name="HOME">/home.jsp</result>
 		</action>
@@ -36,20 +50,6 @@
 			<result name="REGISTRATIONVERIFY">/registration.jsp</result>
 		</action>
 
-
-		<action name="upload" class="in.dresszone.web.actions.FileUploadAction">
-			<!-- <interceptor-ref name="defaultStack">
-				<param name="fileUpload.maximumSize">1048576</param>
-				<param name="fileUpload.allowedTypes">text/plain</param>
-			</interceptor-ref> -->
-			
-			<result name="success">/result.jsp</result>
-			<result name="error">/error.jsp</result>
-		</action>
 	</package>
-
-
-
-
 
 </struts>

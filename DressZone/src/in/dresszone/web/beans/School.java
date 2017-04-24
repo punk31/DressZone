@@ -6,6 +6,9 @@ import java.util.List;
 
 public class School {
 
+	private String schoolID;
+	private String city;
+	private String address;
 	private String schoolName;
 	private String pinCode;
 	private String location;
@@ -13,6 +16,30 @@ public class School {
 	private List<File> imageFiles = new ArrayList<File>();
 	private List<String> imageFilesFileName = new ArrayList<String>();
 	private List<String> imageFilesContentType = new ArrayList<String>();
+
+	public String getSchoolID() {
+		return schoolID;
+	}
+
+	public void setSchoolID(String schoolID) {
+		this.schoolID = schoolID;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	public String getSchoolName() {
 		return schoolName;
@@ -35,7 +62,7 @@ public class School {
 	}
 
 	public void setLocation(String location) {
-		System.out.println("Setter >> location >"+location);
+		System.out.println("Setter >> location >" + location);
 		this.location = location;
 	}
 

@@ -19,9 +19,6 @@
 	}
 
 	function uploadImages() {
-		confirm("Hello to confirm");
-
-		setTimeout(resetFlag, 1000);
 		document.getElementById('uploadButton').disabled = true;
 		return false;
 	}
