@@ -33,5 +33,6 @@ public class SHACheckSumExample
     	}
 
     	System.out.println("Hex format : " + hexString.toString());
+    	fis.close();
     }
 }
